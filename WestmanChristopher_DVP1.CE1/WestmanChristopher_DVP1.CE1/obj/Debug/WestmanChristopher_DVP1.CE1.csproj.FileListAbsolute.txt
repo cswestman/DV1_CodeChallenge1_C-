@@ -1,0 +1,7 @@
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.exe.config
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.exe
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.pdb
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.csprojResolveAssemblyReference.cache
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.csproj.CoreCompileInputs.cache
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.exe
+Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.pdb
