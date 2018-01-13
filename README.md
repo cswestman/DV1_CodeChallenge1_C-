@@ -1,6 +1,6 @@
 # WestmanChristopher_DVP1.CE1
 
-#This is the first coding challenge that test prior coding skills
+# This is the first coding challenge that test prior coding skills
 
 * This challenge consist of 5 sub coding challenges, each with its own unique problem and solution.
 
@@ -8,7 +8,7 @@
 
 * Each challenge also has its own method within the program.cs file, under the main method.
 
-###Some resources I used to complete this challenge:
+### Some resources I used to complete this challenge:
 
 * For counting the amount of words within a sentance string, click [here](https://stackoverflow.com/questions/13485856/count-how-many-words-in-each-sentence).
 
@@ -16,4 +16,4 @@
 
 **Original commit history for this code challenge can be found [here](https://bitbucket.org/cswestman89/westmanchristopher_dvp1.ce1).**
 
-###Testing data will be entered in shortly
+### Testing data will be entered in shortly
