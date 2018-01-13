@@ -14,4 +14,6 @@
 
 * For reversing the chars in a string, click [here](http://tipsandtricks.runicsoft.com/CSharp/StringReverse.html).
 
+**Original commit history for this code challenge can be found [here](https://bitbucket.org/cswestman89/westmanchristopher_dvp1.ce1).**
+
 ###Testing data will be entered in shortly

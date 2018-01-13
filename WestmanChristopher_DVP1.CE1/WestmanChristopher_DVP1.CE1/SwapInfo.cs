@@ -10,63 +10,57 @@ namespace WestmanChristopher_DVP1.CE1
 
     class SwapInfo
     {
-        // Initiate variables
-        string mFirstName;
-        string mLastName;
-        string mFullName;
+        // Initiate auto-implimented properties
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName { get; set; }
 
         // Constructor method
-        public SwapInfo(string _first, string _last)
+        public SwapInfo(string first, string last)
         {
-            mFirstName = _first;
-            mLastName = _last;
-            mFullName = mFirstName + " " + mLastName;
+            FirstName = first;
+            LastName = last;
+            FullName = FirstName + " " + LastName;
         }
 
-        // Overloading constructor method 
-        public SwapInfo(string _fullName)
+        // Overloading constructor method  if user types in full name
+        public SwapInfo(string fullName)
         {
-            mFullName = _fullName;
+            FullName = fullName;
         }
-
-        // Setter methods for both variables
-        public void SetFirstName(string _first)
-        {
-            mFirstName = _first;
-        }
-
-        public void SetLastName(string _last)
-        {
-            mLastName = _last;
-        }
-
-        // Getter methods to allow user to get variables from main method program file
-        public string GetFirstName()
-        {
-            return mFirstName;
-        }
-
-        public string GetLastName()
-        {
-            return mLastName;
-        }
-
-        // Getter and setter method to return full name is desired
-        public void SetFullName(string _fullName)
-        {
-            mFullName = _fullName;
-        }
-
-        public string GetFullName()
-        {
-            return mFullName;
-        }
-
+        
         // This method will reverse the order of the user's name
         public string ReverseName()
         {
-            string reverseName = mLastName + " " + mFirstName;
+            string reverseName = LastName + " " + FirstName;
             return reverseName;
+        }
+
+        // Method for Challenge 1
+        public static void ChallengeOne()
+        {
+            Console.WriteLine("You are now entering Challenge 1!\r\n");
+
+            // Create variable for SwapInfo object and for validation
+            string firstName;
+            string lastName;
+
+            // Create user prompts, pass into validation method, then store in variables
+            Console.Write("Please type in your first name: ");
+            firstName = Validate.Input(Console.ReadLine());
+            Console.WriteLine("Your first name is : " + firstName + "\r\n");
+
+            Console.Write("Please type in your last name: ");
+            lastName = Validate.Input(Console.ReadLine());
+            Console.WriteLine("Your last name is : " + lastName + "\r\n");
+
+            // Instantiate new object of SwapInfo class and pass in user input
+            var newUser = new SwapInfo(firstName, lastName);
+
+            // Give user feedback by calling GetFullName method 
+            Console.WriteLine("Your full name is " + newUser.FullName + ".");
+            // Reverse the name order using the ReverseName method and tell user
+            Console.WriteLine("Your full name in reverse is " + newUser.ReverseName() + ".\r\n");
         }
 
     }

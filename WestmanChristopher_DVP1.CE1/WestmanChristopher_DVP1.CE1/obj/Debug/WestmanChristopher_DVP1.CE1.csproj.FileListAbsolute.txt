@@ -5,3 +5,10 @@ Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\Wes
 Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.csproj.CoreCompileInputs.cache
 Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.exe
 Z:\Desktop\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.pdb
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.exe
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\obj\Debug\WestmanChristopher_DVP1.CE1.pdb
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.exe.config
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.exe
+\\vmware-host\Shared Folders\Desktop\Portfolio\Portfolio\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\WestmanChristopher_DVP1.CE1\bin\Debug\WestmanChristopher_DVP1.CE1.pdb

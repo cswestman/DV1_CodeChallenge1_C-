@@ -37,5 +37,28 @@ namespace WestmanChristopher_DVP1.CE1
             return new string(mSentence.ToCharArray().Reverse().ToArray());
         }
 
+        // Method for Challenge 2
+        public static void ChallengeTwo()
+        {
+            Console.WriteLine("You are now entering Challenge 2!\r\n");
+            // Initiate variable for validation and storing user input
+            string userSentence;
+
+            // Prompt user for a sentence, validate for blank space and that it has at least six words, then store
+            Console.WriteLine("Please type in the sentense you would like to be reversed, six words minimum!");
+
+            // Validate user input and ensure user types in at least 6 words
+            userSentence = Validate.Input(Console.ReadLine(), "word");
+
+            // Create new Backwards object and pass in userSentence
+            var userString = new Backwards(userSentence);
+
+            // Give user feedback
+            Console.WriteLine("You typed in : " + userString.GetSent());
+
+            // Reverse string and give as new user feedback by calling the ReverseString method created in the Backwards class
+            Console.WriteLine("Your sentence in reverse reads as: {0} \r\n", userString.ReverseString());
+        }
+
     }
 }

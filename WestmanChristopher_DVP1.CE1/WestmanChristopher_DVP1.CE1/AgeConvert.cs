@@ -9,51 +9,68 @@ namespace WestmanChristopher_DVP1.CE1
     // This class will take the user's age and convert it into other usable numbers
     class AgeConvert
     {
-        double mAge;
+        public double Age { get; set; }
 
         // AgeConvert constructor method
-        public AgeConvert(double _age)
+        public AgeConvert(double age)
         {
-            mAge = _age;
+            Age = age;
         }
-
-        // Getter and Setter methods
-        public void SetAge(double _age)
-        {
-            mAge = _age;
-        }
-
-        public double GetAge()
-        {
-            return mAge;
-        }
-
+        
         // Method to convert age to days
         public double AgeDays()
         {
-            double _days = mAge * 365;
-            return _days;
+            double days = Age * 365;
+            return days;
         }
 
         // Method to convert age to hours
         public double AgeHours()
         {
-            double _hours = mAge * 8760;
-            return _hours;
+            double hours = Age * 8760;
+            return hours;
         }
 
         // Method to convert age to minutes
         public double AgeMin()
         {
-            double _minutes = mAge * 525600;
-            return _minutes;
+            double minutes = Age * 525600;
+            return minutes;
         }
 
         // Method to convert age to seconds
         public double AgeSec()
         {
-            double _seconds = mAge * 31536000;
-            return _seconds;
+            double seconds = Age * 31536000;
+            return seconds;
+        }
+
+        // Method for Challenge 3
+        public static void ChallengeThree()
+        {
+            Console.WriteLine("You are now entering Challenge 3!\r\n");
+            // Varibales used for name and age
+            double age;
+            string newName;
+
+            // Prompt user for full name, validate, store, and create new name object with SwapInfo
+            Console.Write("Please type in your full name: ");
+            newName = Validate.Input(Console.ReadLine());
+            var newUserName = new SwapInfo(newName);
+
+            // Give user feedback
+            Console.WriteLine("The name your entered is: " + newUserName.FullName);
+
+            // Promt user for age, validate, store, and create new age object
+            Console.Write("Please enter your age: ");
+            age = Validate.Age(Console.ReadLine());
+            var newAge = new AgeConvert(age);
+
+            // Give user feedback and convert age to  other usable numbers
+            Console.WriteLine("{0} has been alive for {1:n0} days!", newUserName.FullName, newAge.AgeDays());
+            Console.WriteLine("{0} has been alive for {1:n0} hours!", newUserName.FullName, newAge.AgeHours());
+            Console.WriteLine("{0} has been alive for {1:n0} minutes!", newUserName.FullName, newAge.AgeMin());
+            Console.WriteLine("{0} has been alive for {1:n0} seconds!\r\n", newUserName.FullName, newAge.AgeSec());
         }
 
     }
