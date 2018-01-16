@@ -11,30 +11,19 @@ namespace WestmanChristopher_DVP1.CE1
     class Backwards
     {
         // Initialize class member variable
-        string mSentence;
+        public string Sentence { get; set; }
 
         // Constructor method 
-        public Backwards(string _sent)
+        public Backwards(string sent)
         {
-            mSentence = _sent;
+            Sentence = sent;
         }
-
-        // Getter and setter methods
-        public void SetSent(string _sent)
-        {
-            mSentence = _sent;
-        }
-
-        public string GetSent()
-        {
-            return mSentence;
-        }
-
+        
         // Reverse method to take in user input and reverse the order of characters and words
         public string ReverseString()
         {
             // Before returning new string, create new string, pass in input as a parameter, then reverse it with the following methods
-            return new string(mSentence.ToCharArray().Reverse().ToArray());
+            return new string(Sentence.ToCharArray().Reverse().ToArray());
         }
 
         // Method for Challenge 2
@@ -48,13 +37,13 @@ namespace WestmanChristopher_DVP1.CE1
             Console.WriteLine("Please type in the sentense you would like to be reversed, six words minimum!");
 
             // Validate user input and ensure user types in at least 6 words
-            userSentence = Validate.Input(Console.ReadLine(), "word");
+            userSentence = Validate.Input(Console.ReadLine(), "word", 6);
 
             // Create new Backwards object and pass in userSentence
             var userString = new Backwards(userSentence);
 
             // Give user feedback
-            Console.WriteLine("You typed in : " + userString.GetSent());
+            Console.WriteLine("You typed in : " + userString.Sentence);
 
             // Reverse string and give as new user feedback by calling the ReverseString method created in the Backwards class
             Console.WriteLine("Your sentence in reverse reads as: {0} \r\n", userString.ReverseString());

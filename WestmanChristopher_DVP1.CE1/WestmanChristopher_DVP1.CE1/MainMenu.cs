@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WestmanChristopher_DVP1.CE1
 {
+    // This class is for calling a simple menu method that allows the user to select which challenge they want to run
     class MainMenu
     {
         public MainMenu()

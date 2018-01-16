@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace WestmanChristopher_DVP1.CE1
 {
+    /* This class is designed to act as a means to validate user input. Users call Validate.Method(), using user argument to set 
+     * the parameter. Some validation methods are overloaded and can receive a second parameter in order to let the method know
+     * which kind of validation to run.
+     */
+
     class Validate
     {
         public Validate()
         {
         }
 
+        /* First standard validation method. Used for validating a string, but mostly to check to see if field is left blank
+         * This method should be used only for validating empty or blank entries, however, some of the other validation can still
+         * run this basic validation.
+         */ 
         public static string Input(string input)
         {
 
@@ -28,16 +37,22 @@ namespace WestmanChristopher_DVP1.CE1
             return input;
         }
 
-        // Overload Input method so in order to select type of validation
-        public static string Input(string input, string type)
+        /* Overload Input method in order to select type of validation. This method accepts a second argument "string type".
+         * The third parameter is to set the word count minimum that the user wants to set
+         */ 
+        public static string Input(string input, string type, int wordMin)
         {
+            // Declare output for return value
             string output;
+
+            // If second argument == "word", run the Word Count validation 
             if (type == "word")
             {
-                output = WordCount(input);
+                output = WordCount(input, wordMin);
             }
             else
             {
+                // If other than "word" is entered, defualt to regular validation
                 output = Input(input);
             }
 
@@ -45,11 +60,16 @@ namespace WestmanChristopher_DVP1.CE1
             
         }
 
-        // String word count validation method for user input
-        public static string WordCount(string input)
+        /* String word count validation method for user input. First paramter takes standard string input, and second 
+         * parameter takes in the desired word minimum. The wordMin param was added for flexability
+         */ 
+        public static string WordCount(string input, int wordMin)
         {
+            // Run regualr validation first
             Input(input);
+            // Initialize wordCount
             var wordCount = 0;
+            
             while (true)
             {
                 // Cycle through string and count the number of words
@@ -59,10 +79,11 @@ namespace WestmanChristopher_DVP1.CE1
                     //Console.WriteLine(wordCount);
                 }
 
-                while (wordCount < 6)
+                // While loop validates number of words in string
+                while (wordCount < wordMin)
                 {
                     // If less than 6 words, prompt user again, validate for blank space, recount words, store value
-                    Console.WriteLine("Please enter at least six words.");
+                    Console.WriteLine("Please enter at least {0} words.", wordMin);
                     input = Validate.Input(Console.ReadLine());
                     foreach (var word in input.TrimEnd('.').Split('.'))
                     {
@@ -70,7 +91,8 @@ namespace WestmanChristopher_DVP1.CE1
                         //Console.WriteLine(wordCount);
                     }
                 }
-                if (wordCount >= 6)
+                // If all looks good, break out of loop
+                if (wordCount >= wordMin)
                 {
                     break;
                 }
@@ -90,6 +112,7 @@ namespace WestmanChristopher_DVP1.CE1
                 // Validate for number < 0
                 while (double.TryParse(input, out output) && output < 0)
                 {
+                    // Warn user and allow re-entry of input
                     Console.WriteLine("\r\nYou can not type in a value of less than 0. Please try again.");
                     input = Console.ReadLine();
                 }

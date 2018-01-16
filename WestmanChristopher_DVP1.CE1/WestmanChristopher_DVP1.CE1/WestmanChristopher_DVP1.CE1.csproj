@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AgeConvert.cs" />
     <Compile Include="Backwards.cs" />
+    <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SwapInfo.cs" />
